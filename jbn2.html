@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">   
+<title>회원 정보 입력</title>
+<style>
+  body{background-color:lightgray;}
+  h3{background-color:skyblue;border:2px dotted black;  border-radius:14px;
+   width:400px;  height: 90; text-align: center;}
+ </style>
+
+
+
+</head>	
+<body>
+<h3><p id="round">회원 정보를 빠짐없이 입력하여 주십시요.
+</p></h3>
+<hr>
+<br>
+
+
+<form>
+	<fieldset>
+	<legend>기본 정보 입력</legend>
+	<label>사용자ID : <input type="text" size="20" value=""></label><br>
+	<label>비밀번호  : <input type="password" size="20" value=""></label><br>
+	<label>전화번호  : <input type="tel" size="20" placeholder="010-1111-2222" value=""></label><br>
+</fieldset>
+</form>
+<br>
+
+<form>
+	<fieldset>
+	<legend>추가정보입력</legend>
+		<ol>
+			<li>
+				혈액형
+					<ul>
+						<li> <input type="radio" name="a"> A형</li>
+						<li> <input type="radio" name="b"> B형</li>
+						<li><input type="radio" name="c"> AB형</li>
+                        <li><input type="radio" name="d">O형</li>
+					</ul>
+				</fieldset>
+			<li>주소 : <input type="text" value="">
+			<li>관심분야 : <input type="text" value="운동">
+		</ol>
+	</form>
+<br>
+<br>
+
+
+
+<input type="button" value="가입완료">
+<input type="button" value="수정">
+</form>
+</body>
+</html>
