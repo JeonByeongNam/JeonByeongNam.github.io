@@ -76,12 +76,23 @@ footer{
 	padding-top: 10px;
 	border: solid 1px #cccccc;
 }
-</style>	
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+		$(function() {
+			$("p").on("click", function() {
+				$("p").css({
+					fontSize: "25px",			// 모든 <p>요소의 글씨 크기를 25px로 설정함.
+					backgroundColor: "yellow"	// 모든 <p>요소의 배경색을 노란색으로 설정함.
+				});
+			});
+		});
+	</script>	
 </head>
 <body id="page">
 <header>
 	<div id="logo">
-	폴리텍 대학교 소개 </div>
+	<p>폴리텍 대학교 소개 </div></p>
 </header>
 <div class="clear"> </div>
 <nav class="top2">

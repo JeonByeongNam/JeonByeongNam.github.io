@@ -6,11 +6,11 @@
 <title>폴리텍홈페이지에 오신것을 환영합니다.</title>
 <style>
 
-	hr{background: green; height:2px; border:opx;}
+	hr{background: green; height:2px; border:0px;}
 	#main-memu{font-size:15px; color:line; background-color: pink; margin-top:15px;
     padding: 12px; text-align:center;}
 
-    #main-menu li { padding: 10px 20px 10px 20px; display:inline;}\
+    #main-menu li { padding: 10px 20px 10px 20px; display:inline;}
     #main_menu li: hover{color:pink;}
     h2{text-shadow: 2px 2px 4px; transition: 5s;}
 
@@ -23,13 +23,22 @@
     table{width: 400px; height:150px; text-align:right; margin-top:350px;}
     th{background-color: orange;}
 
- </style>
- <style>
+ 
+ 
  	#aa{
  		display: inline;
  		margin: 30px;
  	}
  </style>
+
+ 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script>
+		$(function() {
+			$("p").on("click", function() {
+				$("p").css("color", "red");
+			});
+		});
+	</script>
 </head>	
 <body>
 <p><span>폴리텍<span>홈페이지에 오신것을 환영합니다.</p>
